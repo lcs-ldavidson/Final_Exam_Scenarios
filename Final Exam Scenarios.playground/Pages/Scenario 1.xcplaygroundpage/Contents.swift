@@ -51,7 +51,35 @@ let orange = Color(hue: 25, saturation: 87, brightness: 96, alpha: 100)
 
 // Begin your solution below...
 
+//orange background.
+canvas.fillColor = orange
+canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: canvas.width, height: canvas.height)
 
+//square black
+canvas.fillColor = Color.black
+
+//squares
+for squareCentre in stride(from: 50, through: 350, by: 100) {
+    for squareCentreY in stride(from: 50, through: 350, by: 50) {
+        
+        if 
+        
+    canvas.drawRectangle(centreX: squareCentre, centreY: squareCentreY, width: 100, height: 100)
+}
+}
+
+
+
+
+// grid
+canvas.defaultLineWidth = 1
+canvas.lineColor = Color.white
+for x in stride(from: 0, through: 600, by: 50) {
+    
+    canvas.drawLine(fromX: x, fromY: 0, toX: x, toY: 600)
+    canvas.drawLine(fromX: 0, fromY: x, toX: 400, toY: x)
+    
+}
 /*:
  **Remember to commit and push your work,please**.
  */
